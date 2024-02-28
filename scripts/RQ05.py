@@ -15,8 +15,8 @@ query($cursor: String) {
     nodes {
       ... on Repository {
         nameWithOwner
-        issues(states: CLOSED) {
-          totalCount
+        primaryLanguage {
+          name
         }
       }
     }
@@ -46,9 +46,9 @@ def get_all_repos():
             break
         cursor = pageInfo['endCursor']
 
-    with open('./scripts/dataset/RQ06.json', 'w') as file:
+    with open('./scripts/dataset/RQ05.json', 'w') as file:
         json.dump(repos, file)
         
 get_all_repos()
 
-print(repos)
+# print(repos)
