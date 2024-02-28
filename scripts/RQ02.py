@@ -12,7 +12,7 @@ headers = {
 
 query = """
 query($cursor: String) {
-  search(query: "stars:>1000", type: REPOSITORY, first: 100, after: $cursor) {
+  search(query: "stars:>0", type: REPOSITORY, first: 100, after: $cursor) {
     nodes {
       ... on Repository {
         nameWithOwner
