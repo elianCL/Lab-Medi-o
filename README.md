@@ -1,5 +1,5 @@
 
-# LAB <XX> : <Título>
+# LAB <XX> : Sprint 01
 
 ## Enunciado:
 
@@ -7,9 +7,10 @@
 
 ## Integrantes do grupo:
 
-* Nome completo
-* Nome completo
-* Nome completo ...
+* Ana Flávia de Souza Ribeiro
+* Elian Eliezer Fialho de Castro
+* Miguel Martins Fonseca da Cruz
+* Rafael Augusto Vieira de Almeida
 
 ## Artefatos:
 
