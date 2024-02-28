@@ -1,0 +1,306 @@
+{'data': {'search': {'nodes': [
+                {'nameWithOwner': 'jwasham/coding-interview-university', 'issues': {'totalCount': 369
+                    }
+                },
+                {'nameWithOwner': 'kamranahmedse/developer-roadmap', 'issues': {'totalCount': 1068
+                    }
+                },
+                {'nameWithOwner': 'facebook/react', 'issues': {'totalCount': 11547
+                    }
+                },
+                {'nameWithOwner': 'vinta/awesome-python', 'issues': {'totalCount': 0
+                    }
+                },
+                {'nameWithOwner': 'trekhleb/javascript-algorithms', 'issues': {'totalCount': 215
+                    }
+                },
+                {'nameWithOwner': 'TheAlgorithms/Python', 'issues': {'totalCount': 1411
+                    }
+                },
+                {'nameWithOwner': 'CyC2018/CS-Notes', 'issues': {'totalCount': 446
+                    }
+                },
+                {'nameWithOwner': 'awesome-selfhosted/awesome-selfhosted', 'issues': {'totalCount': 804
+                    }
+                },
+                {'nameWithOwner': 'ohmyzsh/ohmyzsh', 'issues': {'totalCount': 4514
+                    }
+                },
+                {'nameWithOwner': 'torvalds/linux', 'issues': {'totalCount': 0
+                    }
+                },
+                {'nameWithOwner': 'practical-tutorials/project-based-learning', 'issues': {'totalCount': 63
+                    }
+                },
+                {'nameWithOwner': 'labuladong/fucking-algorithm', 'issues': {'totalCount': 452
+                    }
+                },
+                {'nameWithOwner': 'huggingface/transformers', 'issues': {'totalCount': 13385
+                    }
+                },
+                {'nameWithOwner': 'Chalarangelo/30-seconds-of-code', 'issues': {'totalCount': 294
+                    }
+                },
+                {'nameWithOwner': 'golang/go', 'issues': {'totalCount': 51814
+                    }
+                },
+                {'nameWithOwner': 'yangshun/tech-interview-handbook', 'issues': {'totalCount': 60
+                    }
+                },
+                {'nameWithOwner': 'microsoft/PowerToys', 'issues': {'totalCount': 20906
+                    }
+                },
+                {'nameWithOwner': 'facebook/create-react-app', 'issues': {'totalCount': 6528
+                    }
+                },
+                {'nameWithOwner': 'f/awesome-chatgpt-prompts', 'issues': {'totalCount': 0
+                    }
+                },
+                {'nameWithOwner': 'denoland/deno', 'issues': {'totalCount': 7589
+                    }
+                },
+                {'nameWithOwner': 'rust-lang/rust', 'issues': {'totalCount': 42574
+                    }
+                },
+                {'nameWithOwner': 'ant-design/ant-design', 'issues': {'totalCount': 27782
+                    }
+                },
+                {'nameWithOwner': 'ryanmcdermott/clean-code-javascript', 'issues': {'totalCount': 83
+                    }
+                },
+                {'nameWithOwner': 'PanJiaChen/vue-element-admin', 'issues': {'totalCount': 2346
+                    }
+                },
+                {'nameWithOwner': 'ripienaar/free-for-dev', 'issues': {'totalCount': 0
+                    }
+                },
+                {'nameWithOwner': 'gothinkster/realworld', 'issues': {'totalCount': 472
+                    }
+                },
+                {'nameWithOwner': 'langchain-ai/langchain', 'issues': {'totalCount': 4841
+                    }
+                },
+                {'nameWithOwner': 'tailwindlabs/tailwindcss', 'issues': {'totalCount': 3113
+                    }
+                },
+                {'nameWithOwner': 'tensorflow/models', 'issues': {'totalCount': 6187
+                    }
+                },
+                {'nameWithOwner': 'MisterBooo/LeetCodeAnimation', 'issues': {'totalCount': 42
+                    }
+                },
+                {'nameWithOwner': 'tonsky/FiraCode', 'issues': {'totalCount': 929
+                    }
+                },
+                {'nameWithOwner': 'macrozheng/mall', 'issues': {'totalCount': 458
+                    }
+                },
+                {'nameWithOwner': 'vuejs/awesome-vue', 'issues': {'totalCount': 188
+                    }
+                },
+                {'nameWithOwner': 'yt-dlp/yt-dlp', 'issues': {'totalCount': 5332
+                    }
+                },
+                {'nameWithOwner': 'hakimel/reveal.js', 'issues': {'totalCount': 1640
+                    }
+                },
+                {'nameWithOwner': 'pallets/flask', 'issues': {'totalCount': 2600
+                    }
+                },
+                {'nameWithOwner': 'apple/swift', 'issues': {'totalCount': 8343
+                    }
+                },
+                {'nameWithOwner': 'vitejs/vite', 'issues': {'totalCount': 6361
+                    }
+                },
+                {'nameWithOwner': 'anuraghazra/github-readme-stats', 'issues': {'totalCount': 1052
+                    }
+                },
+                {'nameWithOwner': 'supabase/supabase', 'issues': {'totalCount': 2972
+                    }
+                },
+                {'nameWithOwner': 'protocolbuffers/protobuf', 'issues': {'totalCount': 5412
+                    }
+                },
+                {'nameWithOwner': 'ChatGPTNextWeb/ChatGPT-Next-Web', 'issues': {'totalCount': 2192
+                    }
+                },
+                {'nameWithOwner': 'MunGell/awesome-for-beginners', 'issues': {'totalCount': 119
+                    }
+                },
+                {'nameWithOwner': 'leonardomso/33-js-concepts', 'issues': {'totalCount': 64
+                    }
+                },
+                {'nameWithOwner': 'reduxjs/redux', 'issues': {'totalCount': 1994
+                    }
+                },
+                {'nameWithOwner': 'hoppscotch/hoppscotch', 'issues': {'totalCount': 1075
+                    }
+                },
+                {'nameWithOwner': 'angular/angular.js', 'issues': {'totalCount': 8648
+                    }
+                },
+                {'nameWithOwner': 'shadowsocks/shadowsocks-windows', 'issues': {'totalCount': 2733
+                    }
+                },
+                {'nameWithOwner': 'awesomedata/awesome-public-datasets', 'issues': {'totalCount': 47
+                    }
+                },
+                {'nameWithOwner': 'openai/whisper', 'issues': {'totalCount': 0
+                    }
+                },
+                {'nameWithOwner': 'gatsbyjs/gatsby', 'issues': {'totalCount': 13858
+                    }
+                },
+                {'nameWithOwner': 'd2l-ai/d2l-zh', 'issues': {'totalCount': 0
+                    }
+                },
+                {'nameWithOwner': 'ocornut/imgui', 'issues': {'totalCount': 4646
+                    }
+                },
+                {'nameWithOwner': 'openai/openai-cookbook', 'issues': {'totalCount': 293
+                    }
+                },
+                {'nameWithOwner': 'azl397985856/leetcode', 'issues': {'totalCount': 243
+                    }
+                },
+                {'nameWithOwner': 'prakhar1989/awesome-courses', 'issues': {'totalCount': 39
+                    }
+                },
+                {'nameWithOwner': 'scutan90/DeepLearning-500-questions', 'issues': {'totalCount': 80
+                    }
+                },
+                {'nameWithOwner': 'prometheus/prometheus', 'issues': {'totalCount': 4666
+                    }
+                },
+                {'nameWithOwner': 'facebook/docusaurus', 'issues': {'totalCount': 2650
+                    }
+                },
+                {'nameWithOwner': 'nuxt/nuxt', 'issues': {'totalCount': 13093
+                    }
+                },
+                {'nameWithOwner': 'Solido/awesome-flutter', 'issues': {'totalCount': 0
+                    }
+                },
+                {'nameWithOwner': 'facebookresearch/llama', 'issues': {'totalCount': 580
+                    }
+                },
+                {'nameWithOwner': 'ionic-team/ionic-framework', 'issues': {'totalCount': 21125
+                    }
+                },
+                {'nameWithOwner': 'Alvin9999/new-pac', 'issues': {'totalCount': 1150
+                    }
+                },
+                {'nameWithOwner': 'git/git', 'issues': {'totalCount': 0
+                    }
+                },
+                {'nameWithOwner': 'PlexPt/awesome-chatgpt-prompts-zh', 'issues': {'totalCount': 54
+                    }
+                },
+                {'nameWithOwner': 'wasabeef/awesome-android-ui', 'issues': {'totalCount': 92
+                    }
+                },
+                {'nameWithOwner': 'juliangarnier/anime', 'issues': {'totalCount': 505
+                    }
+                },
+                {'nameWithOwner': 'moment/moment', 'issues': {'totalCount': 3892
+                    }
+                },
+                {'nameWithOwner': 'AppFlowy-IO/AppFlowy', 'issues': {'totalCount': 1490
+                    }
+                },
+                {'nameWithOwner': 'commaai/openpilot', 'issues': {'totalCount': 2346
+                    }
+                },
+                {'nameWithOwner': 'pi-hole/pi-hole', 'issues': {'totalCount': 2762
+                    }
+                },
+                {'nameWithOwner': 'serverless/serverless', 'issues': {'totalCount': 5049
+                    }
+                },
+                {'nameWithOwner': 'jgraph/drawio-desktop', 'issues': {'totalCount': 1154
+                    }
+                },
+                {'nameWithOwner': 'mastodon/mastodon', 'issues': {'totalCount': 6999
+                    }
+                },
+                {'nameWithOwner': 'mozilla/pdf.js', 'issues': {'totalCount': 9118
+                    }
+                },
+                {'nameWithOwner': 'ethereum/go-ethereum', 'issues': {'totalCount': 7530
+                    }
+                },
+                {'nameWithOwner': 'golang-standards/project-layout', 'issues': {'totalCount': 41
+                    }
+                },
+                {'nameWithOwner': 'meteor/meteor', 'issues': {'totalCount': 8755
+                    }
+                },
+                {'nameWithOwner': 'karan/Projects', 'issues': {'totalCount': 33
+                    }
+                },
+                {'nameWithOwner': 'ngosang/trackerslist', 'issues': {'totalCount': 415
+                    }
+                },
+                {'nameWithOwner': 'BurntSushi/ripgrep', 'issues': {'totalCount': 1467
+                    }
+                },
+                {'nameWithOwner': 'ColorlibHQ/AdminLTE', 'issues': {'totalCount': 2710
+                    }
+                },
+                {'nameWithOwner': 'charlax/professional-programming', 'issues': {'totalCount': 23
+                    }
+                },
+                {'nameWithOwner': 'parcel-bundler/parcel', 'issues': {'totalCount': 4598
+                    }
+                },
+                {'nameWithOwner': 'kamranahmedse/design-patterns-for-humans', 'issues': {'totalCount': 47
+                    }
+                },
+                {'nameWithOwner': 'x64dbg/x64dbg', 'issues': {'totalCount': 1836
+                    }
+                },
+                {'nameWithOwner': 'k88hudson/git-flight-rules', 'issues': {'totalCount': 55
+                    }
+                },
+                {'nameWithOwner': 'jakevdp/PythonDataScienceHandbook', 'issues': {'totalCount': 76
+                    }
+                },
+                {'nameWithOwner': 'hashicorp/terraform', 'issues': {'totalCount': 18805
+                    }
+                },
+                {'nameWithOwner': 'bailicangdu/vue2-elm', 'issues': {'totalCount': 511
+                    }
+                },
+                {'nameWithOwner': 'google/zx', 'issues': {'totalCount': 320
+                    }
+                },
+                {'nameWithOwner': 'Alamofire/Alamofire', 'issues': {'totalCount': 2695
+                    }
+                },
+                {'nameWithOwner': 'grpc/grpc', 'issues': {'totalCount': 10567
+                    }
+                },
+                {'nameWithOwner': 'nwjs/nw.js', 'issues': {'totalCount': 6373
+                    }
+                },
+                {'nameWithOwner': 'discourse/discourse', 'issues': {'totalCount': 0
+                    }
+                },
+                {'nameWithOwner': 'nlohmann/json', 'issues': {'totalCount': 2113
+                    }
+                },
+                {'nameWithOwner': 'dcloudio/uni-app', 'issues': {'totalCount': 3401
+                    }
+                },
+                {'nameWithOwner': 'react-hook-form/react-hook-form', 'issues': {'totalCount': 4229
+                    }
+                },
+                {'nameWithOwner': 'dkhamsing/open-source-ios-apps', 'issues': {'totalCount': 273
+                    }
+                }
+            ], 'pageInfo': {'endCursor': 'Y3Vyc29yOjEwMA==', 'hasNextPage': True
+            }
+        }
+    }
+}
