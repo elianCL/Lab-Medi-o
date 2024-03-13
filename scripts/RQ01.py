@@ -1,9 +1,12 @@
 import requests
 import json
+import csv
+import matplotlib.pyplot as plt
 from datetime import datetime
+import statistics
 
 with open("./scripts/token", "r") as token_file:
-    token = token_file.read().strip() 
+    token = token_file.read().strip()
 
 url = 'https://api.github.com/graphql'
 headers = {
@@ -26,7 +29,7 @@ query($cursor: String) {
   }
 }
 """
-## Método que calcula a idade dos repositórios
+
 def calculate_repository_age(creation_date):
     creation_datetime = datetime.strptime(creation_date, "%Y-%m-%dT%H:%M:%SZ")
     today = datetime.now()
@@ -56,7 +59,23 @@ def get_all_repos():
             break
         cursor = pageInfo['endCursor']
 
-    with open('./scripts/dataset/RQ01.json', 'w') as file:
-        json.dump(repos, file)
-        
+    with open('./scripts/dataset/RQ01.csv', 'w', newline='') as csvfile:
+        fieldnames = ['nameWithOwner', 'createdAt', 'age']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for repo in repos:
+            writer.writerow(repo)
+
+    ages = [repo['age'] for repo in repos]
+    plt.hist(ages, bins=20, edgecolor='black')
+    plt.xlabel('Idade dos repositórios')
+    plt.ylabel('Número de repositórios')
+    plt.title('Repositórios por idade')
+    plt.show()
+
+
+    print("Média: ", statistics.mean(ages))
+    print("Moda: ", statistics.mode(ages))
+    print("Mediana: ", statistics.median(ages))
+
 get_all_repos()

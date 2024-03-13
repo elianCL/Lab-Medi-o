@@ -1,9 +1,11 @@
 import requests
 import json
-from datetime import datetime
+import statistics
+import csv
+import matplotlib.pyplot as plt
 
 with open("./scripts/token", "r") as token_file:
-    token = token_file.read().strip() 
+    token = token_file.read().strip()
 
 url = 'https://api.github.com/graphql'
 headers = {
@@ -52,7 +54,25 @@ def get_all_repos():
             break
         cursor = pageInfo['endCursor']
 
-    with open('./scripts/dataset/RQ02.json', 'w') as file:
-        json.dump(repos, file)
+
+    with open('./scripts/dataset/RQ02.csv', 'w', newline='') as csvfile:
+        fieldnames = ['nameWithOwner', 'pullRequests']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for repo in repos:
+            writer.writerow(repo)
+
+
+    pull_requests = [repo['pullRequests'] for repo in repos]
+    plt.hist(pull_requests, bins=20, edgecolor='black')
+    plt.xlabel('Number of Pull Requests')
+    plt.ylabel('Number of Repositories')
+    plt.title('Distribution of Pull Requests per Repository')
+    plt.show()
+
+
+    print("Média: ", statistics.mean(pull_requests))
+    print("Moda: ", statistics.mode(pull_requests))
+    print("Mediana: ", statistics.median(pull_requests))
 
 get_all_repos()

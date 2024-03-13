@@ -1,5 +1,8 @@
 import requests
 import json
+import csv
+import statistics
+import matplotlib.pyplot as plt
 
 with open("./scripts/token", "r") as token_file:
     token = token_file.read().strip() 
@@ -46,9 +49,22 @@ def get_all_repos():
             break
         cursor = pageInfo['endCursor']
 
-    with open('./scripts/dataset/RQ06.json', 'w') as file:
-        json.dump(repos, file)
-        
-get_all_repos()
+    with open('./scripts/dataset/RQ06.csv', 'w', newline='') as csvfile:
+        fieldnames = ['nameWithOwner', 'closedIssuesCount']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for repo in repos:
+            writer.writerow({'nameWithOwner': repo['nameWithOwner'], 'closedIssuesCount': repo['issues']['totalCount'] if 'issues' in repo else 0})
 
-print(repos)
+    issues_counts = [repo['issues']['totalCount'] if 'issues' in repo else 0 for repo in repos]
+    plt.hist(issues_counts, bins=20, edgecolor='black')
+    plt.xlabel('Closed Issues Count')
+    plt.ylabel('Number of Repositories')
+    plt.title('Distribution of Closed Issues Count')
+    plt.show()
+
+    print("Média: ", statistics.mean(issues_counts))
+    print("Moda: ", statistics.mode(issues_counts))
+    print("Mediana: ", statistics.median(issues_counts))
+
+get_all_repos()
