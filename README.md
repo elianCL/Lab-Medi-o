@@ -42,3 +42,7 @@ Métrica: razão entre número de issues fechadas pelo total de issues
 * [Scripts](scripts)
 * [Conjunto de dados](scripts/dataset)
   
+
+
+## Como rodar
+No diretório raíz(este) execute `python3 ./scripts/sprint-1/RQ01.py`

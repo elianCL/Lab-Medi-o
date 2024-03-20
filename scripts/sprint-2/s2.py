@@ -3,7 +3,7 @@ import csv
 
 with open("./scripts/token", "r") as token_file:
     token = token_file.read().strip()
-    
+
 url = 'https://api.github.com/graphql'
 headers = {
     'Authorization': f'Bearer {token}',
@@ -48,7 +48,9 @@ def get_all_repos():
         for node in response_data['data']['search']['nodes']:
             repository_info = {
                 'nameWithOwner': node['nameWithOwner'],
-                'createdAt' : node['createdAt']
+                'createdAt' : node['createdAt'],
+                'stargazerCount': node['stargazerCount'],
+                'commitCount': node['defaultBranchRef']['target']['history']['totalCount']
             }
             repos.append(repository_info)
         pageInfo = response_data['data']['search']['pageInfo']
@@ -60,11 +62,9 @@ def get_all_repos():
     return repos
 
 def write_to_csv(repos):
-    with open('./scripts/dataset/sz.csv', 'w', newline='') as csvfile:
-
-        fieldnames = ['nameWithOwner', 'createdAt']
+    with open('./scripts/dataset/s2.csv', 'w', newline='') as csvfile:
+        fieldnames = ['nameWithOwner', 'createdAt', 'stargazerCount', 'commitCount']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
         writer.writeheader()
         for repo in repos:
             writer.writerow(repo)
