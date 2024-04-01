@@ -1,5 +1,6 @@
 import requests
 import csv
+import tqdm
 
 with open("./scripts/token", "r") as token_file:
     token = token_file.read().strip()
@@ -62,7 +63,7 @@ def get_all_repos():
     return repos
 
 def write_to_csv(repos):
-    with open('./scripts/dataset/s2.csv', 'w', newline='') as csvfile:
+    with open('./scripts/sprint-2/dataset/s2.csv', 'w', newline='') as csvfile:
         fieldnames = ['nameWithOwner', 'createdAt', 'stargazerCount', 'commitCount']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
