@@ -49,7 +49,7 @@ def get_all_repos():
             break
         cursor = pageInfo['endCursor']
 
-    with open('./scripts/dataset/RQ06.csv', 'w', newline='') as csvfile:
+    with open('./scripts/sprint-1/dataset/RQ06.csv', 'w', newline='') as csvfile:
         fieldnames = ['nameWithOwner', 'closedIssuesCount']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()

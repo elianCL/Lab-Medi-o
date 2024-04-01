@@ -47,7 +47,7 @@ def get_all_repos():
             break
         cursor = pageInfo['endCursor']
 
-    with open('./scripts/dataset/RQ03.json', 'w') as file:
+    with open('./scripts/sprint-1/dataset/RQ03.json', 'w') as file:
         json.dump(repos, file)
         
 get_all_repos()
