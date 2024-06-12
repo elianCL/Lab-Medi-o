@@ -5,7 +5,6 @@ def get_token():
     with open("./scripts/token", "r") as token_file:
         return token_file.read().strip()
 
-# URLs das APIs REST e GraphQL
 rest_urls = [
     "https://api.github.com/repos/facebook/react",
     "https://api.github.com/repos/facebook/react/issues",
@@ -52,7 +51,6 @@ graphql_queries = [
 
 graphql_url = "https://api.github.com/graphql"
 
-# Headers de autenticação, se necessário
 headers = {
     "Authorization": f"Bearer {get_token()}",
     "Content-Type": "application/json"
